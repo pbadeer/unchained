@@ -6,8 +6,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.10/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ['SECRET_KEY']
+# REPLACE THIS! Go generate a key here:
+# http://www.miniwebtool.com/django-secret-key-generator/
+SECRET_KEY = 'topsecret'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -70,7 +71,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'unchained_db',
         'USER': 'unchained_user',
-        'PASSWORD': 'H%S^%H$^SW#Q$YAu5as4isu',
+        'PASSWORD': 'asdfasdfasdf',
         'HOST': 'localhost',
         'PORT': 3306
     }
