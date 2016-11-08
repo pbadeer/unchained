@@ -13,6 +13,7 @@ SECRET_KEY = 'topsecret'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+# Make sure you add your production URLs here!
 ALLOWED_HOSTS = []
 
 # Application definition
@@ -24,7 +25,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'schultz.apps.schultzConfig',
-    'rest_framework'
+    'rest_framework',
+    'unchained'
 ]
 
 REST_FRAMEWORK = {
@@ -107,6 +109,7 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
+STATIC_ROOT = '/var/www/html/schultz/static/'
 STATIC_URL = '/static/'
 
 LOGIN_REDIRECT_URL = '/'
