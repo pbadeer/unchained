@@ -14,7 +14,10 @@ SECRET_KEY = 'topsecret'
 DEBUG = True
 
 # Make sure you add your production URLs here!
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '.exampledomain.com',  # Example Domain entry
+    '0.0.0.0'  # Example IP entry
+]
 
 # Application definition
 INSTALLED_APPS = [
